@@ -4,6 +4,25 @@
 	align-items: center;
 	transform: translateY(30vh);
 	//border: solid;
+	.piece {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background: #fff;
+		color: #fff;
+		opacity: 0.5;
+		z-index: -5;
+		pointer-events: none;
+	}
+	@for $i from 1 through 10 {
+		.piece:nth-child(#{$i}) {
+			top: random(800) - 400 + px;
+			left: random(800) - 400 + px;
+			transform: scale(random() * 2);
+			//transition: all 0.8s;
+		}
+	}
 }
 // .main-container__projets {
 // 	perspective: 1000px;
@@ -89,39 +108,39 @@
 		//transition: all 1s;
 		border: solid transparent;
 	}
-	.piece {
-		position: absolute;
-		//padding: 30px 50px;
-		//border-radius: 10px;
-		width: 50px;
-		height: 50px;
-		border-radius: 50%;
-		background: #fff;
-		color: #fff;
-		opacity: 0.5;
-		//font-size: 1.5em;
-		z-index: -5;
-	}
 	@for $i from 1 through 10 {
-		.piece:nth-child(#{$i}) {
-			top: random(800) - 400 + px;
-			left: random(800) - 400 + px;
-			transform: scale(random() * 2);
+		&:hover .piece:nth-child(#{$i}) {
+			//.main-container__projets:hover .piece:nth-child(#{$i}) {
+			transition: all 0.8s;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50% -50%);
 		}
 	}
+	&:hover .just_about {
+		transform: scale(3);
+	}
+	.just_about {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50% -50%);
+	}
+	// &:hover .piece .projet__piece {
+	// 	// transition: all 0.8s;
+	// 	// top: 50%;
+	// 	// left: 50%;
+	// 	// transform: translate(-50% -50%);
+	// 	// //duration: .8;
+	// 	// opacity: 1;
+	// 	// transform: scale(1);
+
+	// }
 	.ten {
 		text-align: center;
 		font-size: 0.8rem;
 		margin-top: 10px;
 		overflow: hidden;
-	}
-	.about__text {
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%, -50%);
-		font-size: 1.5rem;
-		//transform: scale(0);
 	}
 }
 .main-container__about {
@@ -136,34 +155,60 @@
 		//transition: all 1s;
 		border: solid transparent;
 	}
-	.piece {
+	&:hover .just_about {
+		transform: scale(5);
+		//transition-delay: 0.7s;
+	}
+	.just_about {
 		position: absolute;
-		width: 50px;
-		height: 50px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: -4;
+		transform: scale(0);
+		//border: solid 1px;
+		// width: 50px;
+		// height: 50px;
 		border-radius: 50%;
-		background: #fff;
-		color: #fff;
-		opacity: 0.5;
-		z-index: -5;
+		padding: 10px;
+		transition: all 0.8s;
+		transition-delay: 0.8s;
+		transform-origin: 35px 32px;
+		background-color: #fff;
 	}
-	@for $i from 1 through 10 {
-		.piece:nth-child(#{$i}) {
-			top: random(800) - 400 + px;
-			left: random(800) - 400 + px;
-			transform: scale(random() * 2);
-		}
-	}
+	// .piece {
+	// 	position: absolute;
+	// 	width: 50px;
+	// 	height: 50px;
+	// 	border-radius: 50%;
+	// 	background: #fff;
+	// 	color: #fff;
+	// 	opacity: 0.5;
+	// 	z-index: -5;
+	// }
+	// @for $i from 1 through 10 {
+	// 	.piece:nth-child(#{$i}) {
+	// 		top: random(800) - 400 + px;
+	// 		left: random(800) - 400 + px;
+	// 		transform: scale(random() * 2);
+	// 	}
+	// }
 	.ten {
 		text-align: center;
 		font-size: 0.8rem;
 		margin-top: 10px;
 		overflow: hidden;
 	}
-	.about__text {
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%, -50%);
-		font-size: 1.5rem;
-	}
+	// .ten:hover {
+	// 	transform: scale(3);
+	// 	border-radius: 10px;
+	// 	padding: 15px;
+	// }
+	// .about__text {
+	// 	position: absolute;
+	// 	left: 50%;
+	// 	top: 50%;
+	// 	transform: translate(-50%, -50%);
+	// 	font-size: 1.5rem;
+	// }
 }
