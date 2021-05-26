@@ -3,7 +3,6 @@
 	justify-content: space-around;
 	align-items: center;
 	transform: translateY(30vh);
-	//border: solid;
 	.piece {
 		position: absolute;
 		width: 50px;
@@ -20,7 +19,77 @@
 			top: random(800) - 400 + px;
 			left: random(800) - 400 + px;
 			transform: scale(random() * 2);
-			//transition: all 0.8s;
+		}
+	}
+}
+
+.main-container__projets {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border: solid 1px;
+	border-radius: 50%;
+	&:hover .projet__text p {
+		transition-delay: 1s;
+		transition-duration: 1s;
+		opacity: 1;
+	}
+	.projet__text {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: -4;
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		transition: all 0.8s;
+		transition-delay: 0.8s;
+		pointer-events: none;
+		p {
+			font-size: 1.2em;
+			text-align: center;
+			padding: 45px;
+			opacity: 0;
+			pointer-events: none;
+			transition-duration: 0.5s;
+			font-family: $first-font;
+		}
+	}
+}
+.main-container__about {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border: solid 1px;
+	border-radius: 50%;
+	&:hover .about__text p {
+		transition-delay: 1s;
+		transition-duration: 1s;
+		opacity: 1;
+	}
+	.about__text {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: -4;
+		//border: solid 1px;
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		transition: all 0.8s;
+		transition-delay: 0.8s;
+		//background-color: #fff;
+		pointer-events: none;
+		p {
+			font-size: 1.2em;
+			text-align: center;
+			padding: 25px;
+			opacity: 0;
+			pointer-events: none;
+			transition-duration: 0.5s;
+			font-family: $first-font;
 		}
 	}
 }
@@ -96,119 +165,3 @@
 // 		transform: rotateY(360deg);
 // 	}
 // }
-.main-container__projets {
-	position: relative;
-	width: 100px;
-	height: 100px;
-	border: solid 1px;
-	border-radius: 50%;
-	transition: all 0.3s;
-	transition-delay: 0.8s;
-	&:hover {
-		//transition: all 1s;
-		border: solid transparent;
-	}
-	@for $i from 1 through 10 {
-		&:hover .piece:nth-child(#{$i}) {
-			//.main-container__projets:hover .piece:nth-child(#{$i}) {
-			transition: all 0.8s;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50% -50%);
-		}
-	}
-	&:hover .just_about {
-		transform: scale(3);
-	}
-	.just_about {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50% -50%);
-	}
-	// &:hover .piece .projet__piece {
-	// 	// transition: all 0.8s;
-	// 	// top: 50%;
-	// 	// left: 50%;
-	// 	// transform: translate(-50% -50%);
-	// 	// //duration: .8;
-	// 	// opacity: 1;
-	// 	// transform: scale(1);
-
-	// }
-	.ten {
-		text-align: center;
-		font-size: 0.8rem;
-		margin-top: 10px;
-		overflow: hidden;
-	}
-}
-.main-container__about {
-	position: relative;
-	width: 100px;
-	height: 100px;
-	border: solid 1px;
-	border-radius: 50%;
-	transition: all 0.3s;
-	transition-delay: 0.8s;
-	&:hover {
-		//transition: all 1s;
-		border: solid transparent;
-	}
-	&:hover .just_about {
-		transform: scale(5);
-		//transition-delay: 0.7s;
-	}
-	.just_about {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		z-index: -4;
-		transform: scale(0);
-		//border: solid 1px;
-		// width: 50px;
-		// height: 50px;
-		border-radius: 50%;
-		padding: 10px;
-		transition: all 0.8s;
-		transition-delay: 0.8s;
-		transform-origin: 35px 32px;
-		background-color: #fff;
-	}
-	// .piece {
-	// 	position: absolute;
-	// 	width: 50px;
-	// 	height: 50px;
-	// 	border-radius: 50%;
-	// 	background: #fff;
-	// 	color: #fff;
-	// 	opacity: 0.5;
-	// 	z-index: -5;
-	// }
-	// @for $i from 1 through 10 {
-	// 	.piece:nth-child(#{$i}) {
-	// 		top: random(800) - 400 + px;
-	// 		left: random(800) - 400 + px;
-	// 		transform: scale(random() * 2);
-	// 	}
-	// }
-	.ten {
-		text-align: center;
-		font-size: 0.8rem;
-		margin-top: 10px;
-		overflow: hidden;
-	}
-	// .ten:hover {
-	// 	transform: scale(3);
-	// 	border-radius: 10px;
-	// 	padding: 15px;
-	// }
-	// .about__text {
-	// 	position: absolute;
-	// 	left: 50%;
-	// 	top: 50%;
-	// 	transform: translate(-50%, -50%);
-	// 	font-size: 1.5rem;
-	// }
-}
