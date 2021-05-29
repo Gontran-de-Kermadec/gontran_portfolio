@@ -62,73 +62,73 @@ h1 {
 }
 
 .main-container .piece:nth-child(1) {
-  top: 341px;
-  left: 330px;
-  -webkit-transform: scale(1.66972);
-          transform: scale(1.66972);
+  top: 205px;
+  left: -196px;
+  -webkit-transform: scale(0.32917);
+          transform: scale(0.32917);
 }
 
 .main-container .piece:nth-child(2) {
-  top: 108px;
-  left: 292px;
-  -webkit-transform: scale(1.37189);
-          transform: scale(1.37189);
+  top: -245px;
+  left: -246px;
+  -webkit-transform: scale(1.86888);
+          transform: scale(1.86888);
 }
 
 .main-container .piece:nth-child(3) {
-  top: -334px;
-  left: -314px;
-  -webkit-transform: scale(1.7357);
-          transform: scale(1.7357);
+  top: 113px;
+  left: -207px;
+  -webkit-transform: scale(0.58655);
+          transform: scale(0.58655);
 }
 
 .main-container .piece:nth-child(4) {
-  top: -319px;
-  left: -25px;
-  -webkit-transform: scale(1.70406);
-          transform: scale(1.70406);
+  top: -121px;
+  left: -206px;
+  -webkit-transform: scale(0.41285);
+          transform: scale(0.41285);
 }
 
 .main-container .piece:nth-child(5) {
-  top: -368px;
-  left: -262px;
-  -webkit-transform: scale(0.29756);
-          transform: scale(0.29756);
+  top: 345px;
+  left: 259px;
+  -webkit-transform: scale(0.29847);
+          transform: scale(0.29847);
 }
 
 .main-container .piece:nth-child(6) {
-  top: -327px;
-  left: 205px;
-  -webkit-transform: scale(1.45681);
-          transform: scale(1.45681);
+  top: 134px;
+  left: 203px;
+  -webkit-transform: scale(0.89261);
+          transform: scale(0.89261);
 }
 
 .main-container .piece:nth-child(7) {
-  top: -51px;
-  left: -234px;
-  -webkit-transform: scale(0.21641);
-          transform: scale(0.21641);
+  top: 246px;
+  left: -252px;
+  -webkit-transform: scale(1.86893);
+          transform: scale(1.86893);
 }
 
 .main-container .piece:nth-child(8) {
-  top: 157px;
-  left: 84px;
-  -webkit-transform: scale(0.78159);
-          transform: scale(0.78159);
+  top: 238px;
+  left: 297px;
+  -webkit-transform: scale(0.8885);
+          transform: scale(0.8885);
 }
 
 .main-container .piece:nth-child(9) {
-  top: 235px;
-  left: 212px;
-  -webkit-transform: scale(0.41473);
-          transform: scale(0.41473);
+  top: 78px;
+  left: 176px;
+  -webkit-transform: scale(0.79371);
+          transform: scale(0.79371);
 }
 
 .main-container .piece:nth-child(10) {
-  top: 386px;
-  left: -363px;
-  -webkit-transform: scale(0.66358);
-          transform: scale(0.66358);
+  top: -130px;
+  left: -279px;
+  -webkit-transform: scale(1.37079);
+          transform: scale(1.37079);
 }
 
 .main-container__projets {
@@ -225,6 +225,19 @@ main {
   top: 50%;
 }
 
+body {
+  width: 100vw;
+}
+
+@media all and (max-width: 500px) {
+  h1 {
+    -webkit-animation: none;
+            animation: none;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+
 @media all and (max-width: 500px) {
   .main-container {
     display: initial;
@@ -232,19 +245,57 @@ main {
 }
 
 @media all and (max-width: 500px) {
+  .main-container .piece {
+    display: none;
+  }
+}
+
+@media all and (max-width: 500px) {
   .main-container__projets {
     left: 50%;
+    top: 80px;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    margin-bottom: 20px;
+    border-radius: initial;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .main-container__projets .projet__text {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media all and (max-width: 500px) and (max-width: 500px) {
+  .main-container__projets .projet__text p {
+    font-size: 1.2em;
+    padding: 45px;
+    opacity: 1;
   }
 }
 
 @media all and (max-width: 500px) {
   .main-container__about {
     left: 50%;
+    top: 150px;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+    border-radius: initial;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .main-container__about .about__text {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media all and (max-width: 500px) and (max-width: 500px) {
+  .main-container__about .about__text p {
+    font-size: 1.2em;
+    opacity: 1;
   }
 }
 

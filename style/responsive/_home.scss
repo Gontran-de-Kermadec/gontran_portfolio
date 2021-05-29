@@ -1,18 +1,71 @@
+body {
+	width: 100vw;
+}
+h1 {
+	@include mobile {
+		animation: none;
+		text-align: center;
+		font-size: 1.5rem;
+	}
+}
 .main-container {
 	@include mobile {
 		display: initial;
 	}
+	.piece {
+		@include mobile {
+			display: none;
+		}
+	}
 	&__projets {
 		@include mobile {
 			left: 50%;
+			top: 80px;
 			transform: translateX(-50%);
-			margin-bottom: 20px;
+			border-radius: initial;
+			//margin-bottom: 20px;
+		}
+		.projet__text {
+			@include mobile {
+				width: 150px;
+				height: 150px;
+				//border-radius: 50%;
+				// transition: all 0.8s;
+				// transition-delay: 0.8s;
+				@include mobile {
+					p {
+						font-size: 1.2em;
+						padding: 45px;
+						opacity: 1;
+						//transition-duration: 0.5s;
+					}
+				}
+			}
 		}
 	}
 	&__about {
 		@include mobile {
 			left: 50%;
+			top: 150px;
 			transform: translateX(-50%);
+			border-radius: initial;
+		}
+		.about__text {
+			@include mobile {
+				width: 150px;
+				height: 150px;
+				//border-radius: 50%;
+				// transition: all 0.8s;
+				// transition-delay: 0.8s;
+				@include mobile {
+					p {
+						font-size: 1.2em;
+						//padding: 45px;
+						opacity: 1;
+						//transition-duration: 0.5s;
+					}
+				}
+			}
 		}
 	}
 }
