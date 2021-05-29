@@ -1,3 +1,18 @@
+h1 {
+	font-family: $first-font;
+	animation: title-animation 15s linear infinite;
+	// &:hover {
+	// 	animation: none;
+	// }
+}
+@keyframes title-animation {
+	0% {
+		transform: translateX(-50%);
+	}
+	100% {
+		transform: translateX(100%);
+	}
+}
 .main-container {
 	display: flex;
 	justify-content: space-around;
@@ -85,7 +100,7 @@
 		p {
 			font-size: 1.2em;
 			text-align: center;
-			padding: 25px;
+			padding: 15px;
 			opacity: 0;
 			pointer-events: none;
 			transition-duration: 0.5s;

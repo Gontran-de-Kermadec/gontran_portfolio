@@ -1,0 +1,18 @@
+.main-container {
+	@include mobile {
+		display: initial;
+	}
+	&__projets {
+		@include mobile {
+			left: 50%;
+			transform: translateX(-50%);
+			margin-bottom: 20px;
+		}
+	}
+	&__about {
+		@include mobile {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}

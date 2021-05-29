@@ -8,6 +8,34 @@ h1 {
   overflow: hidden;
 }
 
+h1 {
+  font-family: "Cinzel Decorative", cursive;
+  -webkit-animation: title-animation 15s linear infinite;
+          animation: title-animation 15s linear infinite;
+}
+
+@-webkit-keyframes title-animation {
+  0% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes title-animation {
+  0% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
 .main-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,73 +62,73 @@ h1 {
 }
 
 .main-container .piece:nth-child(1) {
-  top: -354px;
-  left: 133px;
-  -webkit-transform: scale(0.1106);
-          transform: scale(0.1106);
+  top: 341px;
+  left: 330px;
+  -webkit-transform: scale(1.66972);
+          transform: scale(1.66972);
 }
 
 .main-container .piece:nth-child(2) {
-  top: 281px;
-  left: 273px;
-  -webkit-transform: scale(1.91879);
-          transform: scale(1.91879);
+  top: 108px;
+  left: 292px;
+  -webkit-transform: scale(1.37189);
+          transform: scale(1.37189);
 }
 
 .main-container .piece:nth-child(3) {
-  top: -171px;
-  left: 86px;
-  -webkit-transform: scale(1.09194);
-          transform: scale(1.09194);
+  top: -334px;
+  left: -314px;
+  -webkit-transform: scale(1.7357);
+          transform: scale(1.7357);
 }
 
 .main-container .piece:nth-child(4) {
-  top: 366px;
-  left: -16px;
-  -webkit-transform: scale(0.15569);
-          transform: scale(0.15569);
+  top: -319px;
+  left: -25px;
+  -webkit-transform: scale(1.70406);
+          transform: scale(1.70406);
 }
 
 .main-container .piece:nth-child(5) {
-  top: 149px;
-  left: -346px;
-  -webkit-transform: scale(0.82131);
-          transform: scale(0.82131);
+  top: -368px;
+  left: -262px;
+  -webkit-transform: scale(0.29756);
+          transform: scale(0.29756);
 }
 
 .main-container .piece:nth-child(6) {
-  top: 265px;
-  left: -36px;
-  -webkit-transform: scale(1.92204);
-          transform: scale(1.92204);
+  top: -327px;
+  left: 205px;
+  -webkit-transform: scale(1.45681);
+          transform: scale(1.45681);
 }
 
 .main-container .piece:nth-child(7) {
-  top: 244px;
-  left: -77px;
-  -webkit-transform: scale(0.35527);
-          transform: scale(0.35527);
+  top: -51px;
+  left: -234px;
+  -webkit-transform: scale(0.21641);
+          transform: scale(0.21641);
 }
 
 .main-container .piece:nth-child(8) {
-  top: -389px;
-  left: 147px;
-  -webkit-transform: scale(1.40475);
-          transform: scale(1.40475);
+  top: 157px;
+  left: 84px;
+  -webkit-transform: scale(0.78159);
+          transform: scale(0.78159);
 }
 
 .main-container .piece:nth-child(9) {
-  top: 70px;
-  left: 307px;
-  -webkit-transform: scale(0.61986);
-          transform: scale(0.61986);
+  top: 235px;
+  left: 212px;
+  -webkit-transform: scale(0.41473);
+          transform: scale(0.41473);
 }
 
 .main-container .piece:nth-child(10) {
-  top: 62px;
-  left: 108px;
-  -webkit-transform: scale(1.13263);
-          transform: scale(1.13263);
+  top: 386px;
+  left: -363px;
+  -webkit-transform: scale(0.66358);
+          transform: scale(0.66358);
 }
 
 .main-container__projets {
@@ -183,7 +211,7 @@ h1 {
 .main-container__about .about__text p {
   font-size: 1.2em;
   text-align: center;
-  padding: 25px;
+  padding: 15px;
   opacity: 0;
   pointer-events: none;
   -webkit-transition-duration: 0.5s;
@@ -195,6 +223,29 @@ main {
   position: absolute;
   left: 50%;
   top: 50%;
+}
+
+@media all and (max-width: 500px) {
+  .main-container {
+    display: initial;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .main-container__projets {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin-bottom: 20px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .main-container__about {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 body {

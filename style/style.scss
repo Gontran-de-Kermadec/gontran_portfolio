@@ -1,12 +1,15 @@
 //utils
 @import "./utils/variables";
-// @import "./utils/mixins";
+@import "./utils/mixins";
 //@import "./utils/keyframes";
 
 //base
 @import "./base/reset";
 @import "./pages/home";
 @import "./pages/about";
+
+//responsive
+@import "./responsive/home";
 
 body {
 	background-color: yellow;
