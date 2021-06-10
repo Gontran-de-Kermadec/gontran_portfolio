@@ -1,11 +1,24 @@
+const options = {
+    cache: false,
+    animateHistoryBrowsing: true
+  };
+const swup = new Swup(options);
+swup.on('contentReplaced', hoverAnimation)
+swup.on('contentReplaced', test)
+
+try {
+    test();
+} catch (error) {
+    console.log(error);
+}
+
 function test () {
     document.querySelector('.btn').addEventListener('click', () => {
     //document.querySelector('button').addEventListener('click', () => {
-        document.querySelector('.try').innerHTML = "kikooo";
+        //document.querySelector('.try').innerHTML = "kikooo";
         console.log('kickckkc');
     })
 }
-test();
 
 
 
@@ -109,13 +122,13 @@ for(let i = 0; i < pieces.length; i++) {
     })
 }
 
-const options = {
-    cache: false,
-    animateHistoryBrowsing: true
-  };
-const swup = new Swup(options);
-swup.on('contentReplaced', hoverAnimation)
-swup.on('contentReplaced', test)
+// const options = {
+//     cache: false,
+//     animateHistoryBrowsing: true
+//   };
+// const swup = new Swup(options);
+// swup.on('contentReplaced', hoverAnimation)
+//swup.on('contentReplaced', test)
 //swup.on('willReplaceContent', hoverAnimation);
 //section projets
 // document.querySelector(".main-container__projets").addEventListener('mouseover', (e)=> {

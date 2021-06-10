@@ -62,73 +62,73 @@ h1 {
 }
 
 .main-container .piece:nth-child(1) {
-  top: 375px;
-  left: 333px;
-  -webkit-transform: scale(0.33555);
-          transform: scale(0.33555);
+  top: -188px;
+  left: -399px;
+  -webkit-transform: scale(0.13346);
+          transform: scale(0.13346);
 }
 
 .main-container .piece:nth-child(2) {
-  top: -140px;
-  left: -265px;
-  -webkit-transform: scale(0.7772);
-          transform: scale(0.7772);
+  top: 399px;
+  left: 368px;
+  -webkit-transform: scale(0.29641);
+          transform: scale(0.29641);
 }
 
 .main-container .piece:nth-child(3) {
-  top: 271px;
-  left: -113px;
-  -webkit-transform: scale(1.03786);
-          transform: scale(1.03786);
+  top: 363px;
+  left: 332px;
+  -webkit-transform: scale(0.98466);
+          transform: scale(0.98466);
 }
 
 .main-container .piece:nth-child(4) {
-  top: -71px;
-  left: -154px;
-  -webkit-transform: scale(1.80736);
-          transform: scale(1.80736);
+  top: -264px;
+  left: -333px;
+  -webkit-transform: scale(1.37585);
+          transform: scale(1.37585);
 }
 
 .main-container .piece:nth-child(5) {
-  top: 22px;
-  left: 262px;
-  -webkit-transform: scale(1.28265);
-          transform: scale(1.28265);
+  top: -28px;
+  left: -230px;
+  -webkit-transform: scale(1.6316);
+          transform: scale(1.6316);
 }
 
 .main-container .piece:nth-child(6) {
-  top: -190px;
-  left: 243px;
-  -webkit-transform: scale(0.26185);
-          transform: scale(0.26185);
+  top: 97px;
+  left: -258px;
+  -webkit-transform: scale(0.95524);
+          transform: scale(0.95524);
 }
 
 .main-container .piece:nth-child(7) {
-  top: 172px;
-  left: 345px;
-  -webkit-transform: scale(0.40284);
-          transform: scale(0.40284);
+  top: 160px;
+  left: 52px;
+  -webkit-transform: scale(1.57719);
+          transform: scale(1.57719);
 }
 
 .main-container .piece:nth-child(8) {
-  top: -195px;
-  left: 358px;
-  -webkit-transform: scale(1.50831);
-          transform: scale(1.50831);
+  top: 150px;
+  left: -241px;
+  -webkit-transform: scale(1.7643);
+          transform: scale(1.7643);
 }
 
 .main-container .piece:nth-child(9) {
-  top: -256px;
-  left: 30px;
-  -webkit-transform: scale(0.84778);
-          transform: scale(0.84778);
+  top: -287px;
+  left: -395px;
+  -webkit-transform: scale(0.12175);
+          transform: scale(0.12175);
 }
 
 .main-container .piece:nth-child(10) {
-  top: 374px;
-  left: -119px;
-  -webkit-transform: scale(0.31963);
-          transform: scale(0.31963);
+  top: 376px;
+  left: -202px;
+  -webkit-transform: scale(1.77222);
+          transform: scale(1.77222);
 }
 
 .main-container__projets {
@@ -217,16 +217,6 @@ h1 {
   font-family: "Cinzel Decorative", cursive;
 }
 
-.transition-fade {
-  -webkit-transition: 1s;
-  transition: 1s;
-  opacity: 1;
-}
-
-html.is-animating .transition-fade {
-  opacity: 0;
-}
-
 ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -240,13 +230,9 @@ ul {
 }
 
 ul li {
-  background-color: blue;
-  width: 100px;
-  height: 100px;
-  border-radius: 0 0 100px 0;
   -webkit-transform-origin: top left;
           transform-origin: top left;
-  z-index: 100;
+  z-index: 30;
 }
 
 .text__container {
@@ -286,27 +272,82 @@ ul li {
   height: 500px;
 }
 
+.bando {
+  position: absolute;
+  width: 100vw;
+  background-color: green;
+  z-index: 50;
+}
+
+@-webkit-keyframes hauteur {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 100vh;
+  }
+  100% {
+    height: 0;
+  }
+}
+
+@keyframes hauteur {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 100vh;
+  }
+  100% {
+    height: 0;
+  }
+}
+
+.transition-swipe {
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  height: 0;
+}
+
+html.is-animating .transition-swipe {
+  height: 100vh;
+}
+
 .transition-slide {
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 html.is-animating .transition-slide {
-  -webkit-transform: translateY(200%);
-          transform: translateY(200%);
-}
-
-html.is-leaving .transition-slide {
-  -webkit-transform: translateY(200%);
-          transform: translateY(200%);
+  opacity: 0.9;
 }
 
 .btn {
   position: absolute;
+}
+
+.fade {
+  opacity: 0;
+  -webkit-animation: fade 2s 1s forwards;
+          animation: fade 2s 1s forwards;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 
 body {
