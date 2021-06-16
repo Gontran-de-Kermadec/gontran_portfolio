@@ -13,11 +13,52 @@ try {
 }
 
 function test () {
-    document.querySelector('.btn').addEventListener('click', () => {
-    //document.querySelector('button').addEventListener('click', () => {
-        //document.querySelector('.try').innerHTML = "kikooo";
-        console.log('kickckkc');
-    })
+    const btns = document.querySelectorAll('.button');
+    console.log(btns);
+    for(let i = 0; i < btns.length; i++) {
+        btns[i].addEventListener('click', () => {
+            console.log(btns[i]);
+            let overlay = document.querySelector('.big_overlay');
+            if(overlay.classList.contains("invisible")) {
+                console.log("invisible");
+                overlay.classList.replace("invisible", "visible");
+            } else {
+                overlay.classList.add("visible");
+            }
+        });
+        document.querySelector('.close_overlay').addEventListener('click', () => {
+            let overlay = document.querySelector('.big_overlay');
+            //overlay.style.display = "block";
+            if(overlay.classList.contains("visible")) {
+                console.log("visible");
+                overlay.classList.replace("visible", "invisible");
+            }
+            //overlay.classList.toggle("visible")
+        })
+    }
+    // btns.addEventListener('click', () => {
+    // //document.querySelector('button').addEventListener('click', () => {
+    //     //document.querySelector('.try').innerHTML = "kikooo";
+    //     console.log(btns[i]);
+    //     let overlay = document.querySelector('.big_overlay');
+    //     if(overlay.classList.contains("invisible")) {
+    //         console.log("invisible");
+    //         overlay.classList.replace("invisible", "visible");
+    //     } else {
+    //         overlay.classList.add("visible");
+    //     }
+    //     //overlay.style.display = "block";
+    //     //overlay.classList.toggle("visible")
+    // })
+    // document.querySelector('.close_overlay').addEventListener('click', () => {
+    //     let overlay = document.querySelector('.big_overlay');
+    //     //overlay.style.display = "block";
+    //     if(overlay.classList.contains("visible")) {
+    //         console.log("visible");
+    //         overlay.classList.replace("visible", "invisible");
+    //     }
+    //     //overlay.classList.toggle("visible")
+    // })
 }
 
 
