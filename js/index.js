@@ -13,25 +13,26 @@ try {
 }
 
 function test () {
-    const btns = document.querySelectorAll('.button');
+    const btns = document.querySelectorAll('.project__button');
+    const overlay = document.querySelectorAll('.big_overlay');
     console.log(btns);
     for(let i = 0; i < btns.length; i++) {
         btns[i].addEventListener('click', () => {
             console.log(btns[i]);
-            let overlay = document.querySelector('.big_overlay');
-            if(overlay.classList.contains("invisible")) {
+            //let overlay = document.querySelector('.big_overlay');
+            if(overlay[i].classList.contains("invisible")) {
                 console.log("invisible");
-                overlay.classList.replace("invisible", "visible");
+                overlay[i].classList.replace("invisible", "visible");
             } else {
-                overlay.classList.add("visible");
+                overlay[i].classList.add("visible");
             }
         });
-        document.querySelector('.close_overlay').addEventListener('click', () => {
-            let overlay = document.querySelector('.big_overlay');
+        document.querySelectorAll('.close_overlay')[i].addEventListener('click', () => {
+            //let over = document.querySelector('.big_overlay');
             //overlay.style.display = "block";
-            if(overlay.classList.contains("visible")) {
+            if(overlay[i].classList.contains("visible")) {
                 console.log("visible");
-                overlay.classList.replace("visible", "invisible");
+                overlay[i].classList.replace("visible", "invisible");
             }
             //overlay.classList.toggle("visible")
         })

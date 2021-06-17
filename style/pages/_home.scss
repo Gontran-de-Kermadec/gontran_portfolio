@@ -1,3 +1,6 @@
+body {
+	background-color: #f9e7e7;
+}
 h1 {
 	font-family: $first-font;
 	animation: title-animation 15s linear infinite;
@@ -23,7 +26,8 @@ h1 {
 		width: 50px;
 		height: 50px;
 		border-radius: 50%;
-		background: #fff;
+		//background: #fff;
+		background: #bc69aa;
 		color: #fff;
 		opacity: 0.5;
 		z-index: -5;
@@ -107,6 +111,18 @@ h1 {
 			font-family: $first-font;
 		}
 	}
+}
+
+//a mettre dans un fichier commun a toutes les pages
+.icon__container {
+	display: initial;
+	.fab {
+		//transform: scale(2);
+		transform-origin: left;
+		transform: scale(3);
+		margin: 20px 0;
+	}
+	//justify-content: center;
 }
 // transition swup
 // .transition-fade {

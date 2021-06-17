@@ -8,6 +8,10 @@ h1 {
   overflow-x: hidden;
 }
 
+body {
+  background-color: #f9e7e7;
+}
+
 h1 {
   font-family: "Cinzel Decorative", cursive;
   -webkit-animation: title-animation 15s linear infinite;
@@ -54,7 +58,7 @@ h1 {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #fff;
+  background: #bc69aa;
   color: #fff;
   opacity: 0.5;
   z-index: -5;
@@ -62,73 +66,73 @@ h1 {
 }
 
 .main-container .piece:nth-child(1) {
-  top: 343px;
-  left: -289px;
-  -webkit-transform: scale(0.61328);
-          transform: scale(0.61328);
+  top: 41px;
+  left: -347px;
+  -webkit-transform: scale(1.68463);
+          transform: scale(1.68463);
 }
 
 .main-container .piece:nth-child(2) {
-  top: -102px;
-  left: -278px;
-  -webkit-transform: scale(1.44717);
-          transform: scale(1.44717);
+  top: 282px;
+  left: -252px;
+  -webkit-transform: scale(0.93864);
+          transform: scale(0.93864);
 }
 
 .main-container .piece:nth-child(3) {
-  top: 330px;
-  left: 175px;
-  -webkit-transform: scale(1.95331);
-          transform: scale(1.95331);
+  top: 329px;
+  left: 377px;
+  -webkit-transform: scale(0.21065);
+          transform: scale(0.21065);
 }
 
 .main-container .piece:nth-child(4) {
-  top: 181px;
-  left: 364px;
-  -webkit-transform: scale(1.87641);
-          transform: scale(1.87641);
+  top: 357px;
+  left: 306px;
+  -webkit-transform: scale(0.37519);
+          transform: scale(0.37519);
 }
 
 .main-container .piece:nth-child(5) {
-  top: -353px;
-  left: -29px;
-  -webkit-transform: scale(1.91839);
-          transform: scale(1.91839);
+  top: 124px;
+  left: -122px;
+  -webkit-transform: scale(0.51875);
+          transform: scale(0.51875);
 }
 
 .main-container .piece:nth-child(6) {
-  top: -123px;
-  left: -105px;
-  -webkit-transform: scale(1.95756);
-          transform: scale(1.95756);
+  top: -287px;
+  left: -252px;
+  -webkit-transform: scale(0.11891);
+          transform: scale(0.11891);
 }
 
 .main-container .piece:nth-child(7) {
-  top: -342px;
-  left: 31px;
-  -webkit-transform: scale(1.79539);
-          transform: scale(1.79539);
+  top: 298px;
+  left: 76px;
+  -webkit-transform: scale(0.65437);
+          transform: scale(0.65437);
 }
 
 .main-container .piece:nth-child(8) {
-  top: -110px;
-  left: -30px;
-  -webkit-transform: scale(0.96109);
-          transform: scale(0.96109);
+  top: -244px;
+  left: 248px;
+  -webkit-transform: scale(1.88123);
+          transform: scale(1.88123);
 }
 
 .main-container .piece:nth-child(9) {
-  top: -161px;
-  left: -110px;
-  -webkit-transform: scale(1.14859);
-          transform: scale(1.14859);
+  top: -43px;
+  left: 158px;
+  -webkit-transform: scale(1.50575);
+          transform: scale(1.50575);
 }
 
 .main-container .piece:nth-child(10) {
-  top: 44px;
-  left: -65px;
-  -webkit-transform: scale(0.80938);
-          transform: scale(0.80938);
+  top: 319px;
+  left: 275px;
+  -webkit-transform: scale(1.18496);
+          transform: scale(1.18496);
 }
 
 .main-container__projets {
@@ -215,6 +219,18 @@ h1 {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
   font-family: "Cinzel Decorative", cursive;
+}
+
+.icon__container {
+  display: initial;
+}
+
+.icon__container .fab {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scale(3);
+          transform: scale(3);
+  margin: 20px 0;
 }
 
 ul {
@@ -372,10 +388,25 @@ html.is-animating .transition-slide {
 .img__container .overlay {
   position: absolute;
   left: 0;
-  background-color: red;
-  opacity: 0;
+  background-color: rgba(0, 0, 0, 0);
   width: 400px;
   height: 400px;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.img__container .project__button {
+  all: unset;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  background-color: violet;
+  opacity: 0;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
@@ -390,9 +421,16 @@ img {
 .ohmyfood {
   border: solid green;
   margin: 10px;
+  border-radius: 5px;
 }
 
 .ohmyfood:hover .img__container .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.ohmyfood:hover .img__container .project__button {
   opacity: 1;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
@@ -562,9 +600,5 @@ body {
     font-size: 1.2em;
     opacity: 1;
   }
-}
-
-body {
-  background-color: yellow;
 }
 /*# sourceMappingURL=style.css.map */
