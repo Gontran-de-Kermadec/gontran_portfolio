@@ -1,9 +1,7 @@
-// main {
-// 	position: absolute;
-// 	left: 50%;
-// 	top: 50%;
-// }
-ul {
+header nav {
+	padding: 10px 50px 10px 40px;
+}
+header ul {
 	display: flex;
 	justify-content: space-between;
 	margin: 0;
@@ -14,8 +12,11 @@ ul {
 		//width: 100px;
 		//height: 100px;
 		//border-radius: 0 0 100px 0;
-		transform-origin: top left;
+		//transform-origin: top left;
+		text-decoration: underline;
 		z-index: 30;
+		font-size: 1.4rem;
+		//padding: 10px 50px;
 	}
 	// li:hover {
 	// 	transform: scale(25, 10);
@@ -24,9 +25,9 @@ ul {
 }
 .text__container {
 	position: relative;
-	transform: translateY(30%);
+	transform: translateY(20%);
 	text-align: justify;
-	padding: 0 35%;
+	padding: 0 30%;
 	font-size: 1.2rem;
 }
 .text__form {

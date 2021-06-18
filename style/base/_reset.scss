@@ -6,3 +6,10 @@ h1 {
 	//overflow: hidden;
 	overflow-x: hidden;
 }
+body {
+	font-family: $first-font;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}

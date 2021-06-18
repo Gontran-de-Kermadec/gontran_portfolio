@@ -1,9 +1,9 @@
 body {
 	background-color: #f9e7e7;
 }
-h1 {
+.homepage-title {
 	font-family: $first-font;
-	animation: title-animation 15s linear infinite;
+	animation: title-animation 30s linear infinite;
 	// &:hover {
 	// 	animation: none;
 	// }

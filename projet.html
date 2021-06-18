@@ -14,13 +14,15 @@
 <body>
     <main id="swup" class="transition-slide">
         <div class="bando transition-swipe"></div>
-        <nav>
-            <ul>
-                <li><a href="/index.html">home</a></li>
-                <li><a href="/about.html">about</a></li>
-            </ul>
-        </nav>
-        <!-- <h1>Projets</h1> -->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">home</a></li>
+                    <li><a href="/about.html">about</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1 class="projectpage-title">Projets</h1>
         <div class="project__container">
             <div class="ohmyfood">
                 <div class="img__container">
@@ -31,13 +33,33 @@
                 </div>
                 <p>Ohmyfood</p>
                 <div class="big_overlay">
-                    <span class="close_overlay">X</span>
-                    <p>Ohmyfood</p>
-                    <img src="/assets/ohmyfood_imp.png" alt="projet ohmyfood">
-                    <p>Integration et responsive</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate exercitationem, culpa illum beatae veritatis harum, quia voluptates delectus porro, maiores omnis quas cupiditate aliquid deserunt saepe ut amet perferendis ab.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate exercitationem, culpa illum beatae veritatis harum, quia voluptates delectus porro, maiores omnis quas cupiditate aliquid deserunt saepe ut amet perferendis ab.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate exercitationem, culpa illum beatae veritatis harum, quia voluptates delectus porro, maiores omnis quas cupiditate aliquid deserunt saepe ut amet perferendis ab.</p>
+                    <!-- <span class="close_overlay">X</span> -->
+                    <i class="fas fa-times close_overlay"></i>
+                    <h2 class="project-title">Ohmyfood</h2>
+                    <p>Il s'agit d'un projet personnel d'intégration d'une application de restauration. Seulement HTML et SASS ont été utilisés pour réaliser le projet.</p>
+                    <p>Le projet contient quelques animations. Par ailleurs, il est responsive et donc utilisable sur mobile et tablette.</p>
+                    <div class="big__img-container">
+                        <figure>
+                            <img src="/assets/omf_homepage.png"
+                                 alt="Image de la page d'accueil du site">
+                            <figcaption>Image de la page d'accueil du site</figcaption>
+                        </figure>
+                        <figure class="two">
+                            <img src="/assets/mobile_size.png"
+                                 alt="Image de l'application pour mobile">
+                            <figcaption>Image de l'application pour mobile</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="/assets/animation_loader.png"
+                                 alt="Image d'une animation de chargement">
+                            <figcaption>Image d'une animation de chargement</figcaption>
+                        </figure>
+                        <figure class="four">
+                            <img src="/assets/omf_page.png"
+                                 alt="Image d'une des pages du site">
+                            <figcaption>Image d'une des pages du site</figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
             <div class="ohmyfood">
