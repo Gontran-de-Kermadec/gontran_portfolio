@@ -1,5 +1,5 @@
-main {
-	text-align: center;
+.projectpage-title {
+	margin: 40px 0;
 }
 .project__container {
 	display: flex;
@@ -33,9 +33,9 @@ main {
 		background-color: violet;
 		opacity: 0;
 		transition: opacity 0.5s;
+		cursor: pointer;
 		// &:hover {
-		// 	opacity: 1;
-		// 	transition: opacity 0.5s;
+		// 	background-color: white;
 		// }
 	}
 	// &::after {
@@ -84,8 +84,9 @@ img {
 	left: 0;
 	width: 100vw;
 	//background-color: black;
-	background-color: rgba($color: black, $alpha: 0.8);
+	background-color: rgba($color: black, $alpha: 0.9);
 	transform: scaleY(0);
+	transform-origin: top;
 	//opacity: 0.9;
 	color: white;
 	z-index: 200;

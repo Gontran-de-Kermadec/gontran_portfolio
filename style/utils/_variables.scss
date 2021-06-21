@@ -1,7 +1,17 @@
 //font
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&family=Six+Caps&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Federo&family=Russo+One&family=Six+Caps&display=swap");
 $first-font: "Cinzel Decorative", cursive;
+$font-russo: "Russo One", sans-serif;
+$font-six: "Six Caps", sans-serif;
+$federo: "Federo", sans-serif;
 //$first-font: "Monoton", cursive;
+
+//colors
+$primary-color: #f9e7e7;
+$secondary-color: #bc69aa;
+$third-color: #f06449;
 
 //map
 $breakpoints: (

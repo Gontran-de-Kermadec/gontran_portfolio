@@ -1,0 +1,25 @@
+header nav {
+	padding: 10px 50px 10px 40px;
+}
+header ul {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	li {
+		//background-color: blue;
+		//width: 100px;
+		//height: 100px;
+		//border-radius: 0 0 100px 0;
+		//transform-origin: top left;
+		text-decoration: underline;
+		z-index: 30;
+		font-size: 1.4rem;
+		//padding: 10px 50px;
+	}
+	// li:hover {
+	// 	transform: scale(25, 10);
+	// 	transition: 0.5s;
+	// }
+}
