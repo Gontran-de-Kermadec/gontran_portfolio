@@ -22,30 +22,6 @@
   }
 }
 
-@-webkit-keyframes homepage-circle {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes homepage-circle {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 @-webkit-keyframes ripple {
   0% {
     opacity: 0;
@@ -138,7 +114,6 @@ aside {
 
 .homepage-title {
   font-family: "Federo", sans-serif;
-  text-transform: uppercase;
 }
 
 .main-container {
@@ -160,143 +135,127 @@ aside {
   height: 50px;
   border-radius: 50%;
   background: #bc69aa;
-  color: #fff;
   opacity: 0.5;
   z-index: -5;
   pointer-events: none;
 }
 
 .main-container .piece:nth-child(1) {
-  top: -7px;
-  left: 37px;
-  -webkit-transform: scale(0.44915);
-          transform: scale(0.44915);
+  top: 233px;
+  left: 117px;
+  -webkit-transform: scale(1.46156);
+          transform: scale(1.46156);
 }
 
 .main-container .piece:nth-child(2) {
-  top: 296px;
-  left: -229px;
-  -webkit-transform: scale(1.07179);
-          transform: scale(1.07179);
+  top: 119px;
+  left: 236px;
+  -webkit-transform: scale(1.86022);
+          transform: scale(1.86022);
 }
 
 .main-container .piece:nth-child(3) {
-  top: 39px;
-  left: -380px;
-  -webkit-transform: scale(1.57512);
-          transform: scale(1.57512);
+  top: 75px;
+  left: 64px;
+  -webkit-transform: scale(0.14163);
+          transform: scale(0.14163);
 }
 
 .main-container .piece:nth-child(4) {
-  top: -205px;
-  left: 320px;
-  -webkit-transform: scale(1.94387);
-          transform: scale(1.94387);
+  top: 41px;
+  left: -312px;
+  -webkit-transform: scale(0.99828);
+          transform: scale(0.99828);
 }
 
 .main-container .piece:nth-child(5) {
-  top: 87px;
-  left: 218px;
-  -webkit-transform: scale(1.37819);
-          transform: scale(1.37819);
+  top: -343px;
+  left: -120px;
+  -webkit-transform: scale(0.07606);
+          transform: scale(0.07606);
 }
 
 .main-container .piece:nth-child(6) {
-  top: 159px;
-  left: -324px;
-  -webkit-transform: scale(1.31728);
-          transform: scale(1.31728);
+  top: 119px;
+  left: 136px;
+  -webkit-transform: scale(1.93727);
+          transform: scale(1.93727);
 }
 
 .main-container .piece:nth-child(7) {
-  top: 41px;
-  left: 173px;
-  -webkit-transform: scale(0.87148);
-          transform: scale(0.87148);
+  top: 0px;
+  left: -49px;
+  -webkit-transform: scale(0.70007);
+          transform: scale(0.70007);
 }
 
 .main-container .piece:nth-child(8) {
-  top: -70px;
-  left: -162px;
-  -webkit-transform: scale(1.10182);
-          transform: scale(1.10182);
+  top: 118px;
+  left: -79px;
+  -webkit-transform: scale(0.06206);
+          transform: scale(0.06206);
 }
 
 .main-container .piece:nth-child(9) {
-  top: 154px;
-  left: -65px;
-  -webkit-transform: scale(1.7967);
-          transform: scale(1.7967);
+  top: -293px;
+  left: -224px;
+  -webkit-transform: scale(0.22108);
+          transform: scale(0.22108);
 }
 
 .main-container .piece:nth-child(10) {
-  top: 297px;
-  left: 15px;
-  -webkit-transform: scale(1.47766);
-          transform: scale(1.47766);
+  top: 380px;
+  left: 381px;
+  -webkit-transform: scale(1.04693);
+          transform: scale(1.04693);
 }
 
-.main-container__projets {
+.main-container__projets,
+.main-container__about {
   position: relative;
   width: 150px;
   height: 150px;
-  border: solid 5px;
   border-radius: 50%;
 }
 
-.main-container__projets:hover .projet__text p {
-  -webkit-transition-delay: 1s;
-          transition-delay: 1s;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-  opacity: 1;
-}
-
-.main-container__projets:hover .projet__circle--origin,
-.main-container__projets:hover .projet__circle--one,
-.main-container__projets:hover .projet__circle--two,
-.main-container__projets:hover .projet__circle--three {
+.main-container__projets:hover .circle,
+.main-container__about:hover .circle {
   -webkit-animation: none;
           animation: none;
   opacity: 0;
 }
 
-.main-container__projets .projet__circle {
+.main-container__projets .circle,
+.main-container__about .circle {
   position: absolute;
-  opacity: 0;
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: -100;
+  opacity: 0;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
 }
 
-.main-container__projets .projet__circle--origin {
+.main-container__projets .circle--origin,
+.main-container__about .circle--origin {
   opacity: 1;
-  -webkit-transform: initial;
-          transform: initial;
-  position: absolute;
   width: 40px;
   height: 40px;
   background: #f06449;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  border-radius: 50%;
-  z-index: -110;
 }
 
-.main-container__projets .projet__circle--one {
+.main-container__projets .circle--one,
+.main-container__about .circle--one {
   border: solid #bc69aa 15px;
   -webkit-animation: ripple 6s infinite;
           animation: ripple 6s infinite;
 }
 
-.main-container__projets .projet__circle--two {
+.main-container__projets .circle--two,
+.main-container__about .circle--two {
   border: solid #f06449 15px;
   -webkit-animation: ripple 6s infinite;
           animation: ripple 6s infinite;
@@ -304,12 +263,22 @@ aside {
           animation-delay: 2s;
 }
 
-.main-container__projets .projet__circle--three {
+.main-container__projets .circle--three,
+.main-container__about .circle--three {
   border: solid #bc69aa 15px;
   -webkit-animation: ripple 6s infinite;
           animation: ripple 6s infinite;
   -webkit-animation-delay: 4s;
           animation-delay: 4s;
+}
+
+.main-container__projets:hover .projet__text p,
+.main-container__about:hover .about__text p {
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  opacity: 1;
 }
 
 .main-container__projets .projet__text {
@@ -330,88 +299,12 @@ aside {
 .main-container__projets .projet__text p {
   font-size: 1.2em;
   text-align: center;
-  padding: 45px;
+  padding: 45px 30px;
   opacity: 0;
   pointer-events: none;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
   font-family: "Cinzel Decorative", cursive;
-}
-
-.main-container__about {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  border: solid 5px;
-  border-radius: 50%;
-}
-
-.main-container__about:hover .about__text p {
-  -webkit-transition-delay: 1s;
-          transition-delay: 1s;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-  opacity: 1;
-}
-
-.main-container__about:hover .about__circle--origin,
-.main-container__about:hover .about__circle--one,
-.main-container__about:hover .about__circle--two,
-.main-container__about:hover .about__circle--three {
-  -webkit-animation: none;
-          animation: none;
-  opacity: 0;
-}
-
-.main-container__about .about__circle {
-  position: absolute;
-  opacity: 0;
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: -100;
-}
-
-.main-container__about .about__circle--origin {
-  opacity: 1;
-  -webkit-transform: initial;
-          transform: initial;
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  background: #f06449;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  border-radius: 50%;
-  z-index: -110;
-}
-
-.main-container__about .about__circle--one {
-  border: solid #bc69aa 15px;
-  -webkit-animation: ripple 6s infinite;
-          animation: ripple 6s infinite;
-}
-
-.main-container__about .about__circle--two {
-  border: solid #f06449 15px;
-  -webkit-animation: ripple 6s infinite;
-          animation: ripple 6s infinite;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-
-.main-container__about .about__circle--three {
-  border: solid #bc69aa 15px;
-  -webkit-animation: ripple 6s infinite;
-          animation: ripple 6s infinite;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
 }
 
 .main-container__about .about__text {
@@ -434,7 +327,7 @@ aside {
 .main-container__about .about__text p {
   font-size: 1.2em;
   text-align: center;
-  padding: 15px;
+  padding: 25px;
   opacity: 0;
   pointer-events: none;
   -webkit-transition-duration: 0.5s;

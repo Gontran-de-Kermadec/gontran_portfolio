@@ -1,10 +1,5 @@
 .homepage-title {
-	//font-family: $first-font;
 	font-family: $federo;
-	//font-family: $font-six;
-	//font-size: 3rem;
-	text-transform: uppercase;
-	//animation: homepage-slideX 30s linear infinite;
 }
 .main-container {
 	display: flex;
@@ -17,7 +12,6 @@
 		height: 50px;
 		border-radius: 50%;
 		background: $secondary-color;
-		color: #fff;
 		opacity: 0.5;
 		z-index: -5;
 		pointer-events: none;
@@ -30,63 +24,112 @@
 		}
 	}
 }
-
-.main-container__projets {
+.main-container__projets,
+.main-container__about {
 	position: relative;
 	width: 150px;
 	height: 150px;
-	border: solid 5px;
+	//border: solid 5px;
 	border-radius: 50%;
-	&:hover .projet__text p {
-		transition-delay: 1s;
-		transition-duration: 1s;
-		opacity: 1;
-	}
-	&:hover .projet__circle--origin,
-	&:hover .projet__circle--one,
-	&:hover .projet__circle--two,
-	&:hover .projet__circle--three {
+	&:hover .circle {
 		animation: none;
 		opacity: 0;
 	}
-	.projet__circle {
+	.circle {
 		position: absolute;
-		opacity: 0;
-		width: 130px;
-		height: 130px;
-		border-radius: 50%;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		z-index: -100;
+		opacity: 0;
+		width: 130px;
+		height: 130px;
+		border-radius: 50%;
 	}
-	.projet__circle--origin {
+	.circle--origin {
 		opacity: 1;
-		transform: initial;
-		position: absolute;
 		width: 40px;
 		height: 40px;
 		background: $third-color;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		border-radius: 50%;
-		z-index: -110;
 	}
-	.projet__circle--one {
+	.circle--one {
 		border: solid $secondary-color 15px;
 		animation: ripple 6s infinite;
 	}
-	.projet__circle--two {
+	.circle--two {
 		border: solid $third-color 15px;
 		animation: ripple 6s infinite;
 		animation-delay: 2s;
 	}
-	.projet__circle--three {
+	.circle--three {
 		border: solid $secondary-color 15px;
 		animation: ripple 6s infinite;
 		animation-delay: 4s;
 	}
+}
+.main-container__projets:hover .projet__text p,
+.main-container__about:hover .about__text p {
+	transition-delay: 1s;
+	transition-duration: 1s;
+	opacity: 1;
+}
+
+.main-container__projets {
+	// position: relative;
+	// width: 150px;
+	// height: 150px;
+	// border: solid 5px;
+	// border-radius: 50%;
+	// &:hover .projet__text p {
+	// 	transition-delay: 1s;
+	// 	transition-duration: 1s;
+	// 	opacity: 1;
+	// }
+	// &:hover .projet__circle--origin,
+	// &:hover .projet__circle--one,
+	// &:hover .projet__circle--two,
+	// &:hover .projet__circle--three {
+	// 	animation: none;
+	// 	opacity: 0;
+	// }
+	// .projet__circle {
+	// 	position: absolute;
+	// 	opacity: 0;
+	// 	width: 130px;
+	// 	height: 130px;
+	// 	border-radius: 50%;
+	// 	top: 50%;
+	// 	left: 50%;
+	// 	transform: translate(-50%, -50%);
+	// 	z-index: -100;
+	// }
+	//.projet__circle--origin {
+	//opacity: 1;
+	// transform: initial;
+	//position: absolute;
+	//width: 40px;
+	//height: 40px;
+	//background: $third-color;
+	//top: 50%;
+	//left: 50%;
+	//transform: translate(-50%, -50%);
+	//border-radius: 50%;
+	//z-index: -110;
+	//}
+	// .projet__circle--one {
+	// 	border: solid $secondary-color 15px;
+	// 	animation: ripple 6s infinite;
+	// }
+	// .projet__circle--two {
+	// 	border: solid $third-color 15px;
+	// 	animation: ripple 6s infinite;
+	// 	animation-delay: 2s;
+	// }
+	// .projet__circle--three {
+	// 	border: solid $secondary-color 15px;
+	// 	animation: ripple 6s infinite;
+	// 	animation-delay: 4s;
+	// }
 	.projet__text {
 		position: absolute;
 		top: 50%;
@@ -101,7 +144,7 @@
 		p {
 			font-size: 1.2em;
 			text-align: center;
-			padding: 45px;
+			padding: 45px 30px;
 			opacity: 0;
 			pointer-events: none;
 			transition-duration: 0.3s;
@@ -110,61 +153,61 @@
 	}
 }
 .main-container__about {
-	position: relative;
-	width: 150px;
-	height: 150px;
-	border: solid 5px;
-	border-radius: 50%;
-	&:hover .about__text p {
-		transition-delay: 1s;
-		transition-duration: 1s;
-		opacity: 1;
-	}
-	&:hover .about__circle--origin,
-	&:hover .about__circle--one,
-	&:hover .about__circle--two,
-	&:hover .about__circle--three {
-		animation: none;
-		opacity: 0;
-	}
-	.about__circle {
-		position: absolute;
-		opacity: 0;
-		width: 130px;
-		height: 130px;
-		border-radius: 50%;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		z-index: -100;
-	}
-	.about__circle--origin {
-		opacity: 1;
-		transform: initial;
-		position: absolute;
-		width: 40px;
-		height: 40px;
-		background: $third-color;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		border-radius: 50%;
-		z-index: -110;
-	}
-	.about__circle--one {
-		border: solid $secondary-color 15px;
-		animation: ripple 6s infinite;
-	}
-	.about__circle--two {
-		border: solid $third-color 15px;
-		animation: ripple 6s infinite;
-		animation-delay: 2s;
-	}
-	.about__circle--three {
-		border: solid $secondary-color 15px;
-		animation: ripple 6s infinite;
-		animation-delay: 4s;
-	}
+	// position: relative;
+	// width: 150px;
+	// height: 150px;
+	// border: solid 5px;
+	// border-radius: 50%;
+	// &:hover .about__text p {
+	// 	transition-delay: 1s;
+	// 	transition-duration: 1s;
+	// 	opacity: 1;
+	// }
+	// &:hover .about__circle--origin,
+	// &:hover .about__circle--one,
+	// &:hover .about__circle--two,
+	// &:hover .about__circle--three {
+	// 	animation: none;
+	// 	opacity: 0;
+	// }
+	// .about__circle {
+	// 	position: absolute;
+	// 	opacity: 0;
+	// 	width: 130px;
+	// 	height: 130px;
+	// 	border-radius: 50%;
+	// 	top: 50%;
+	// 	left: 50%;
+	// 	transform: translate(-50%, -50%);
+	// 	z-index: -100;
+	// }
+	//.about__circle--origin {
+	//opacity: 1;
+	//transform: initial;
+	//position: absolute;
+	//width: 40px;
+	//height: 40px;
+	//background: $third-color;
+	//top: 50%;
+	//left: 50%;
+	//transform: translate(-50%, -50%);
+	//border-radius: 50%;
+	//z-index: -110;
+	//}
+	// .about__circle--one {
+	// 	border: solid $secondary-color 15px;
+	// 	animation: ripple 6s infinite;
+	// }
+	// .about__circle--two {
+	// 	border: solid $third-color 15px;
+	// 	animation: ripple 6s infinite;
+	// 	animation-delay: 2s;
+	// }
+	// .about__circle--three {
+	// 	border: solid $secondary-color 15px;
+	// 	animation: ripple 6s infinite;
+	// 	animation-delay: 4s;
+	// }
 	.about__text {
 		position: absolute;
 		top: 50%;
@@ -180,7 +223,7 @@
 		p {
 			font-size: 1.2em;
 			text-align: center;
-			padding: 15px;
+			padding: 25px;
 			opacity: 0;
 			pointer-events: none;
 			transition-duration: 0.5s;
