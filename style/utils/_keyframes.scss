@@ -28,7 +28,38 @@
 	}
 	100% {
 		opacity: 0;
-		width: 40px;
-		height: 40px;
+		width: 35px;
+		height: 35px;
+	}
+}
+
+//project page
+@keyframes visible {
+	0% {
+		transform: scaleY(0);
+		//transform: scaleX(0);
+	}
+	50% {
+		transform: scaleY(0.005);
+		//transform: scaleX(0.1);
+	}
+	100% {
+		transform: scaleY(1);
+		//transform: scaleX(1);
+	}
+}
+
+@keyframes invisible {
+	0% {
+		transform: scaleY(1);
+		//display: block;
+	}
+	50% {
+		transform: scaleY(0.005);
+	}
+	100% {
+		transform: scaleY(0);
+		opacity: 0;
+		//display: none;
 	}
 }

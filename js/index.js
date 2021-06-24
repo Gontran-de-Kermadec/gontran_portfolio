@@ -1,6 +1,7 @@
 const options = {
     cache: false,
-    animateHistoryBrowsing: true
+    animateHistoryBrowsing: true,
+    //disableIE: true
   };
 const swup = new Swup(options);
 swup.on('contentReplaced', hoverAnimation)
