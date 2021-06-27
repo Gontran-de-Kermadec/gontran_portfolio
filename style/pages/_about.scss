@@ -3,7 +3,12 @@
 	transform: translateY(20%);
 	text-align: justify;
 	padding: 0 30%;
-	font-size: 1.2rem;
+	font-size: 2rem;
+	font-weight: 900;
+	font-family: $font-paragraph;
+	p {
+		margin: 15px 0;
+	}
 }
 .text__form {
 	position: absolute;

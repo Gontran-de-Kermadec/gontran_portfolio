@@ -17,12 +17,14 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="/index.html">home</a></li>
-                    <li><a href="/about.html">about</a></li>
+                    <li><a href="/index.html">ACCUEIL</a></li>
+                    <li><a href="/about.html">À PROPOS</a></li>
                 </ul>
             </nav>
         </header>
-        <h1 class="projectpage-title">Projets</h1>
+        <div class="title__container">
+            <h1 class="projectpage-title">Projets</h1>
+        </div>
         <div class="project__container">
             <div class="project ohmyfood">
                 <div class="project__card">
@@ -34,13 +36,15 @@
                     </div>
                     <p>Ohmyfood</p>
                 </div>
-                <div class="big_overlay">
-                    <button>
-                        <i class="fas fa-times close_overlay"></i>
+                <div class="project__big-overlay">
+                    <button class="close__overlay">
+                        <i class="fas fa-times"></i>
                     </button>
-                    <h2 class="project-title">Ohmyfood</h2>
-                    <p>Il s'agit d'un projet personnel d'intégration d'une application de restauration. Seulement HTML et SASS ont été utilisés pour réaliser le projet.</p>
-                    <p>Le projet contient quelques animations. Par ailleurs, il est responsive et donc utilisable sur mobile et tablette.</p>
+                    <div class="big__header">
+                        <h2 class="project-title">Ohmyfood</h2>
+                        <p>Il s'agit d'un projet personnel d'intégration d'une application de restauration. Seulement HTML et SASS ont été utilisés pour réaliser le projet.</p>
+                        <p>Le projet contient quelques animations. Par ailleurs, il est responsive et donc utilisable sur mobile et tablette.</p>    
+                    </div>
                     <div class="big__img-container big__img-container--grid">
                         <figure>
                             <img src="/assets/animation_loader.png"
@@ -72,21 +76,25 @@
                 </div>
             </div>
             <div class="project groupomania">
-                <div class="img__container">
-                    <div class="overlay">
-                        <button class="project__button">Voir plus</button>
+                <div class="project__card">
+                    <div class="img__container">
+                        <div class="overlay">
+                            <button class="project__button">Voir plus</button>
+                        </div>
+                        <img src="/assets/groupo-presentation.png" alt="projet groupomania">
                     </div>
-                    <img src="/assets/groupo-presentation.png" alt="projet groupomania">
+                    <p>Groupomania</p>
                 </div>
-                <p>Groupomania</p>
-                <div class="big_overlay">
-                    <button>
-                        <i class="fas fa-times close_overlay"></i>
+                <div class="project__big-overlay">
+                    <button class="close__overlay">
+                        <i class="fas fa-times"></i>
                     </button>
-                    <h2>Groupomania</h2>
-                    <p>Il s'agit d'un projet personnel réalisé dans le cadre de ma formation. L'objectif est de répondre au besoin d'un client imaginaire (Groupomania) dans la conception d'un réseau social d'entreprise à destination des employés. C'est un projet fullstack. Ainsi j'ai tout conçu, du front au back en passant par la base de données.</p>
-                    <p>Les technologies utilisées sur ce projet sont Vue.JS pour le front, Node.JS pour le back et MySQL pour la base de données.</p>
-                    <p>C'est un réseau social basique, c'est-à-dire qui remplit des fonctions très simples. Vous pouvez voir certaines d'entre elles plus bas.</p>
+                    <div class="big__header">
+                        <h2>Groupomania</h2>
+                        <p>Il s'agit d'un projet personnel réalisé dans le cadre de ma formation. L'objectif est de répondre au besoin d'un client imaginaire (Groupomania) dans la conception d'un réseau social d'entreprise à destination des employés. C'est un projet fullstack. Ainsi j'ai tout conçu, du front au back en passant par la base de données.</p>
+                        <p>Les technologies utilisées sur ce projet sont Vue.js pour le front, Node.js pour le back et MySQL pour la base de données.</p>
+                        <p>C'est un réseau social qui possède des fonctionnalités très simples. Vous pouvez voir certaines d'entre elles ci-dessous.</p>
+                    </div>
                     <div class="big__img-container">
                         <figure class="four">
                             <img src="/assets/groupo-login.png" alt="projet groupomania">
@@ -119,30 +127,48 @@
                     </section>
                 </div>
             </div>
-            <div class="project">
-                <div class="img__container">
-                    <div class="overlay">
-                        <button class="project__button">Voir plus</button>
+            <div class="project pekocko">
+                <div class="project__card">
+                    <div class="img__container">
+                        <div class="overlay">
+                            <button class="project__button">Voir plus</button>
+                        </div>
+                        <img src="/assets/peck-pres.png" alt="projet Pekocko">
                     </div>
-                    <img src="/assets/ohmyfood_imp.png" alt="projet ohmyfood">
-                </div>
-                <p>Ohmyfood</p>
-                <div class="big_overlay">
-                    <span class="close_overlay">X</span>
-                    <p>Ohmyfood</p>
-                    <img src="/assets/ohmyfood_imp.png" alt="projet ohmyfood">
-                    <p>Integration et responsive</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate exercitationem, culpa illum beatae veritatis harum, quia voluptates delectus porro, maiores omnis quas cupiditate aliquid deserunt saepe ut amet perferendis ab.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate exercitationem, culpa illum beatae veritatis harum, quia voluptates delectus porro, maiores omnis quas cupiditate aliquid deserunt saepe ut amet perferendis ab.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate exercitationem, culpa illum beatae veritatis harum, quia voluptates delectus porro, maiores omnis quas cupiditate aliquid deserunt saepe ut amet perferendis ab.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate exercitationem, culpa illum beatae veritatis harum, quia voluptates delectus porro, maiores omnis quas cupiditate aliquid deserunt saepe ut amet perferendis ab.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate exercitationem, culpa illum beatae veritatis harum, quia voluptates delectus porro, maiores omnis quas cupiditate aliquid deserunt saepe ut amet perferendis ab.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate exercitationem, culpa illum beatae veritatis harum, quia voluptates delectus porro, maiores omnis quas cupiditate aliquid deserunt saepe ut amet perferendis ab.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate exercitationem, culpa illum beatae veritatis harum, quia voluptates delectus porro, maiores omnis quas cupiditate aliquid deserunt saepe ut amet perferendis ab.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate exercitationem, culpa illum beatae veritatis harum, quia voluptates delectus porro, maiores omnis quas cupiditate aliquid deserunt saepe ut amet perferendis ab.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate exercitationem, culpa illum beatae veritatis harum, quia voluptates delectus porro, maiores omnis quas cupiditate aliquid deserunt saepe ut amet perferendis ab.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate exercitationem, culpa illum beatae veritatis harum, quia voluptates delectus porro, maiores omnis quas cupiditate aliquid deserunt saepe ut amet perferendis ab.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate exercitationem, culpa illum beatae veritatis harum, quia voluptates delectus porro, maiores omnis quas cupiditate aliquid deserunt saepe ut amet perferendis ab.</p>
+                    <p>Pekocko</p>
+                </div> 
+                <div class="project__big-overlay">
+                    <button class="close__overlay">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div class="big__header">
+                        <h2>Pekocko</h2>
+                        <p>C'est un projet orienté back qui a pour objectif de réaliser une API sécurisée pour une application de sauce piquante. Le front était déjà fourni, il s'agissait donc créer le back seulement.</p>
+                        <p>Pour ce projet, les technologies utilisées sont Node.js, Express.js, MongoDB. On retrouve aussi l'utilisation de toutes les oprétations CRUD pour fonctionner avec les bases de données.</p>
+                        <p>Même s'il ne s'agit pas d'un projet front, vous pouvez voir, ci-dessous, quelques images de l'application</p>
+                    </div>
+                    <div class="big__img-container">
+                        <figure>
+                            <img src="/assets/peck-login.png" alt="projet groupomania">
+                            <figcaption>Page de connection avec un système d'authentification sécurisé</figcaption>
+                        </figure>
+                        <figure class="four">
+                            <img src="/assets/peck-home.png" alt="projet groupomania">
+                            <figcaption>Page d'accueil affichant toutes les sauces enregistrées sur l'application</figcaption>
+                        </figure>
+                        <figure class="four">
+                            <img src="/assets/peck-form.png" alt="projet groupomania">
+                            <figcaption>Formulaire permettant l'ajout d'une nouvelle sauce sur l'application</figcaption>
+                        </figure>
+                        <figure class="four">
+                            <img src="/assets/peck-sauce.png" alt="projet groupomania">
+                            <figcaption>Page correspondant à la sauce selectionnée. On y retrouve divers informations la concernant.</figcaption>
+                        </figure>
+                    </div>
+                    <section class="overlay__link">
+                        <p>Le projet est hebergé sur Github. Vous pouvez le consulter en cliquant ci-dessous</p>
+                        <a href="https://github.com/Gontran-de-Kermadec/P6_pekocko" target="_blank">Repository</a>
+                    </section>
                 </div>
             </div>
         </div>

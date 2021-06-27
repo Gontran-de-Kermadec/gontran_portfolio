@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Monoton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&family=Six+Caps&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Federo&family=Russo+One&family=Six+Caps&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Federo&family=Russo+One&family=Six+Caps&family=Wire+One&display=swap");
 @-webkit-keyframes homepage-slideX {
   0% {
     -webkit-transform: translateX(-75%);
@@ -112,12 +112,15 @@
   }
 }
 
-body,
-h1 {
+* {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body,
+h1 {
   overflow-x: hidden;
 }
 
@@ -128,7 +131,7 @@ a {
 }
 
 body {
-  font-family: "Cinzel Decorative", cursive;
+  font-family: "Wire One", sans-serif;
   background-color: #f9e7e7;
 }
 
@@ -151,7 +154,8 @@ header ul {
 header ul li {
   text-decoration: underline;
   z-index: 30;
-  font-size: 1.4rem;
+  font-family: "Federo", sans-serif;
+  font-size: 2rem;
 }
 
 aside {
@@ -203,73 +207,73 @@ aside {
 }
 
 .main-container .piece:nth-child(1) {
-  top: -12px;
-  left: -279px;
-  -webkit-transform: scale(1.91352);
-          transform: scale(1.91352);
+  top: -164px;
+  left: -86px;
+  -webkit-transform: scale(0.71753);
+          transform: scale(0.71753);
 }
 
 .main-container .piece:nth-child(2) {
-  top: 283px;
-  left: 119px;
-  -webkit-transform: scale(1.37242);
-          transform: scale(1.37242);
+  top: -310px;
+  left: -379px;
+  -webkit-transform: scale(0.22702);
+          transform: scale(0.22702);
 }
 
 .main-container .piece:nth-child(3) {
-  top: 79px;
-  left: -369px;
-  -webkit-transform: scale(0.716);
-          transform: scale(0.716);
+  top: 178px;
+  left: 71px;
+  -webkit-transform: scale(0.8201);
+          transform: scale(0.8201);
 }
 
 .main-container .piece:nth-child(4) {
-  top: 364px;
-  left: -300px;
-  -webkit-transform: scale(1.77394);
-          transform: scale(1.77394);
+  top: 348px;
+  left: -339px;
+  -webkit-transform: scale(1.87158);
+          transform: scale(1.87158);
 }
 
 .main-container .piece:nth-child(5) {
-  top: -258px;
-  left: -344px;
-  -webkit-transform: scale(0.63335);
-          transform: scale(0.63335);
+  top: -13px;
+  left: 178px;
+  -webkit-transform: scale(1.53975);
+          transform: scale(1.53975);
 }
 
 .main-container .piece:nth-child(6) {
-  top: -396px;
-  left: -126px;
-  -webkit-transform: scale(1.29823);
-          transform: scale(1.29823);
+  top: -248px;
+  left: -302px;
+  -webkit-transform: scale(0.62553);
+          transform: scale(0.62553);
 }
 
 .main-container .piece:nth-child(7) {
-  top: -179px;
-  left: 99px;
-  -webkit-transform: scale(0.77963);
-          transform: scale(0.77963);
+  top: -239px;
+  left: -89px;
+  -webkit-transform: scale(1.80943);
+          transform: scale(1.80943);
 }
 
 .main-container .piece:nth-child(8) {
-  top: 397px;
-  left: -237px;
-  -webkit-transform: scale(1.10949);
-          transform: scale(1.10949);
+  top: -259px;
+  left: -69px;
+  -webkit-transform: scale(0.78077);
+          transform: scale(0.78077);
 }
 
 .main-container .piece:nth-child(9) {
-  top: 69px;
-  left: -278px;
-  -webkit-transform: scale(0.26956);
-          transform: scale(0.26956);
+  top: 204px;
+  left: 143px;
+  -webkit-transform: scale(0.55463);
+          transform: scale(0.55463);
 }
 
 .main-container .piece:nth-child(10) {
-  top: 151px;
-  left: 296px;
-  -webkit-transform: scale(0.14847);
-          transform: scale(0.14847);
+  top: 312px;
+  left: 89px;
+  -webkit-transform: scale(0.96592);
+          transform: scale(0.96592);
 }
 
 .main-container__projets,
@@ -352,19 +356,19 @@ aside {
 
 .main-container__projets .text p,
 .main-container__about .text p {
-  font-size: 1.2em;
+  font-size: 1.8em;
   text-align: center;
-  padding: 45px 30px;
+  padding: 30px 0;
   opacity: 0;
   pointer-events: none;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
-  font-family: "Cinzel Decorative", cursive;
+  font-family: "Federo", sans-serif;
 }
 
 .main-container__projets .text .text--padding,
 .main-container__about .text .text--padding {
-  padding: 25px;
+  padding: 30px 0;
 }
 
 .main-container__projets:hover .projet__text p,
@@ -382,7 +386,13 @@ aside {
           transform: translateY(20%);
   text-align: justify;
   padding: 0 30%;
-  font-size: 1.2rem;
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: "Wire One", sans-serif;
+}
+
+.text__container p {
+  margin: 15px 0;
 }
 
 .text__form {
@@ -491,6 +501,15 @@ html.is-animating .transition-slide {
   }
 }
 
+h1,
+h2 {
+  font-family: "Federo", sans-serif;
+}
+
+.title__container {
+  text-align: center;
+}
+
 .projectpage-title {
   margin: 40px 0;
 }
@@ -513,6 +532,8 @@ html.is-animating .transition-slide {
           box-shadow: 0px 1px 5px 5px;
   margin: 10px;
   border-radius: 5px;
+  font-size: 2rem;
+  font-weight: 900;
 }
 
 .project:hover .img__container .overlay {
@@ -540,6 +561,15 @@ html.is-animating .transition-slide {
   height: 400px;
 }
 
+.img__container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-bottom: solid 1px;
+  border-radius: 5px 5px 0 0;
+}
+
 .img__container .overlay {
   position: absolute;
   left: 0;
@@ -558,7 +588,6 @@ html.is-animating .transition-slide {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 10px;
-  font-size: 1.2rem;
   border-radius: 10px;
   background-color: #f06449;
   opacity: 0;
@@ -567,16 +596,7 @@ html.is-animating .transition-slide {
   cursor: pointer;
 }
 
-img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-bottom: solid 1px;
-  border-radius: 5px 5px 0 0;
-}
-
-.big_overlay {
+.project__big-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -589,18 +609,18 @@ img {
   z-index: 200;
 }
 
-.big_overlay button {
+.project__big-overlay button {
   all: unset;
   float: left;
   font-size: 1.5rem;
   padding: 10px;
 }
 
-.big_overlay .project-title {
-  margin-top: 50px;
+.project__big-overlay .big__header p {
+  margin: 15px 15%;
 }
 
-.big_overlay .big__img-container {
+.project__big-overlay .big__img-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -609,18 +629,20 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 60px 0 0 0;
 }
 
-.big_overlay .big__img-container figure {
+.project__big-overlay .big__img-container figure {
   width: 600px;
-  margin: 0;
+  margin: 20px 0;
 }
 
-.big_overlay .big__img-container img {
-  width: 80%;
+.project__big-overlay .big__img-container img {
+  width: 85%;
+  height: auto;
 }
 
-.big_overlay .big__img-container--grid {
+.project__big-overlay .big__img-container--grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -628,40 +650,40 @@ img {
   -ms-grid-rows: (300px)[3];
       grid-template-rows: repeat(3, 300px);
   margin-top: 50px;
+  justify-items: center;
 }
 
-.big_overlay .big__img-container--grid figure {
-  margin: 0;
+.project__big-overlay .big__img-container--grid figure {
+  margin: 20px 0;
 }
 
-.big_overlay .big__img-container--grid .two {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  grid-column-end: 2;
+.project__big-overlay .big__img-container--grid .two {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 1;
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 3;
 }
 
-.big_overlay .big__img-container--grid .four {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 1;
+.project__big-overlay .big__img-container--grid .two img {
+  width: 75%;
+}
+
+.project__big-overlay .big__img-container--grid .four {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 2;
   -ms-grid-row: 3;
       grid-row-start: 3;
   grid-row-end: 3;
 }
 
-.big_overlay img {
-  width: 65%;
-  height: auto;
-}
-
-.big_overlay .overlay__link {
+.project__big-overlay .overlay__link {
   padding: 50px 0 20px 0;
 }
 
-.big_overlay .overlay__link a {
+.project__big-overlay .overlay__link a {
   margin: 0 10px;
 }
 

@@ -1,3 +1,10 @@
+h1,
+h2 {
+	font-family: $font-header;
+}
+.title__container {
+	text-align: center;
+}
 .projectpage-title {
 	margin: 40px 0;
 }
@@ -11,8 +18,10 @@
 	box-shadow: 0px 1px 5px 5px;
 	margin: 10px;
 	border-radius: 5px;
+	font-size: 2rem;
+	font-weight: 900;
 	&:hover .img__container .overlay {
-		background-color: rgba($color: black, $alpha: 0.5);
+		background-color: rgba($color: #000, $alpha: 0.5);
 		transition: background-color 0.5s;
 	}
 	&:hover .img__container .project__button {
@@ -30,12 +39,17 @@
 	position: relative;
 	width: 400px;
 	height: 400px;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-bottom: solid 1px;
+		border-radius: 5px 5px 0 0;
+	}
 	.overlay {
 		position: absolute;
 		left: 0;
-		//background-color: red;
 		background-color: rgba($color: black, $alpha: 0);
-		//opacity: 0;
 		width: 400px;
 		height: 400px;
 		transition: background-color 0.5s;
@@ -47,7 +61,6 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		padding: 10px;
-		font-size: 1.2rem;
 		border-radius: 10px;
 		background-color: $third-color;
 		opacity: 0;
@@ -55,43 +68,39 @@
 		cursor: pointer;
 	}
 }
-img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	border-bottom: solid 1px;
-	border-radius: 5px 5px 0 0;
-}
-.big_overlay {
+
+.project__big-overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100vw;
 	background-color: rgba($color: $third-color, $alpha: 0.9);
-	//background-color: rgba($color: black, $alpha: 0.9);
 	transform: scaleY(0);
 	transform-origin: top;
 	z-index: 200;
-	//.close_overlay {
 	button {
 		all: unset;
 		float: left;
 		font-size: 1.5rem;
 		padding: 10px;
 	}
-	.project-title {
-		margin-top: 50px;
+	.big__header {
+		p {
+			margin: 15px 15%;
+		}
 	}
 	.big__img-container {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+		margin: 60px 0 0 0;
 		figure {
 			width: 600px;
-			margin: 0;
+			margin: 20px 0;
 		}
 		img {
-			width: 80%;
+			width: 85%;
+			height: auto;
 		}
 	}
 	.big__img-container--grid {
@@ -99,26 +108,25 @@ img {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: repeat(3, 300px);
 		margin-top: 50px;
+		justify-items: center;
 		figure {
-			margin: 0;
+			margin: 20px 0;
 		}
 		.two {
-			grid-column-start: 2;
-			grid-column-end: 2;
-			grid-row-start: 1;
-			grid-row-end: 3;
-		}
-		.four {
 			grid-column-start: 1;
 			grid-column-end: 1;
+			grid-row-start: 1;
+			grid-row-end: 3;
+			img {
+				width: 75%;
+			}
+		}
+		.four {
+			grid-column-start: 2;
+			grid-column-end: 2;
 			grid-row-start: 3;
 			grid-row-end: 3;
 		}
-	}
-
-	img {
-		width: 65%;
-		height: auto;
 	}
 	.overlay__link {
 		padding: 50px 0 20px 0;
@@ -131,7 +139,6 @@ img {
 	animation: visible 1s ease-in forwards;
 	height: auto;
 	overflow-y: hidden;
-	//font-size: 1.5rem;
 }
 .invisible {
 	animation: invisible 1s ease-out forwards;

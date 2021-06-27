@@ -15,7 +15,7 @@ try {
 
 function test () {
     const btns = document.querySelectorAll('.project__button');
-    const overlay = document.querySelectorAll('.big_overlay');
+    const overlay = document.querySelectorAll('.project__big-overlay');
     console.log(btns);
     for(let i = 0; i < btns.length; i++) {
         btns[i].addEventListener('click', () => {
@@ -28,9 +28,7 @@ function test () {
                 overlay[i].classList.add("visible");
             }
         });
-        document.querySelectorAll('.close_overlay')[i].addEventListener('click', () => {
-            //let over = document.querySelector('.big_overlay');
-            //overlay.style.display = "block";
+        document.querySelectorAll('.close__overlay')[i].addEventListener('click', () => {
             if(overlay[i].classList.contains("visible")) {
                 console.log("visible");
                 overlay[i].classList.replace("visible", "invisible");
