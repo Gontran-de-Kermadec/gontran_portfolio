@@ -2,3 +2,24 @@ body {
 	font-family: $font-paragraph;
 	background-color: $primary-color;
 }
+//transition page
+.transition-slide {
+	transition: 0.5s;
+}
+
+html.is-animating .transition-slide {
+	opacity: 0.9;
+}
+.between-pages {
+	position: absolute;
+	width: 100vw;
+	background-color: $third-color;
+	z-index: 50;
+}
+.transition-swipe {
+	transition: 0.5s ease-in-out;
+	height: 0;
+}
+html.is-animating .transition-swipe {
+	height: 100vh;
+}

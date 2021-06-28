@@ -2,16 +2,12 @@ aside {
 	position: fixed;
 	top: 50%;
 	transform: translateY(-50%);
-	//text-align: left;
 }
 .icon__container {
 	display: initial;
-	padding: 0;
 	.fab {
-		//transform: scale(2);
 		transform-origin: left;
 		transform: scale(3);
 		margin: 20px 0;
 	}
-	//justify-content: center;
 }

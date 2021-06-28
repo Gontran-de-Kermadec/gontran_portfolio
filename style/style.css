@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Monoton&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Russo+One&family=Six+Caps&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Federo&family=Russo+One&family=Six+Caps&family=Wire+One&display=swap");
 @-webkit-keyframes homepage-slideX {
   0% {
@@ -135,6 +133,32 @@ body {
   background-color: #f9e7e7;
 }
 
+.transition-slide {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+html.is-animating .transition-slide {
+  opacity: 0.9;
+}
+
+.between-pages {
+  position: absolute;
+  width: 100vw;
+  background-color: #f06449;
+  z-index: 50;
+}
+
+.transition-swipe {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  height: 0;
+}
+
+html.is-animating .transition-swipe {
+  height: 100vh;
+}
+
 header nav {
   padding: 10px 50px 10px 40px;
 }
@@ -146,8 +170,6 @@ header ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 
@@ -167,7 +189,6 @@ aside {
 
 .icon__container {
   display: initial;
-  padding: 0;
 }
 
 .icon__container .fab {
@@ -207,73 +228,73 @@ aside {
 }
 
 .main-container .piece:nth-child(1) {
-  top: 253px;
-  left: -201px;
-  -webkit-transform: scale(0.73308);
-          transform: scale(0.73308);
+  top: 169px;
+  left: -389px;
+  -webkit-transform: scale(1.83308);
+          transform: scale(1.83308);
 }
 
 .main-container .piece:nth-child(2) {
-  top: -277px;
-  left: -310px;
-  -webkit-transform: scale(0.29035);
-          transform: scale(0.29035);
+  top: -53px;
+  left: -303px;
+  -webkit-transform: scale(1.26275);
+          transform: scale(1.26275);
 }
 
 .main-container .piece:nth-child(3) {
-  top: -354px;
-  left: -382px;
-  -webkit-transform: scale(1.65439);
-          transform: scale(1.65439);
+  top: 394px;
+  left: -188px;
+  -webkit-transform: scale(0.46268);
+          transform: scale(0.46268);
 }
 
 .main-container .piece:nth-child(4) {
-  top: -344px;
-  left: 392px;
-  -webkit-transform: scale(0.28749);
-          transform: scale(0.28749);
+  top: 346px;
+  left: -18px;
+  -webkit-transform: scale(0.41553);
+          transform: scale(0.41553);
 }
 
 .main-container .piece:nth-child(5) {
-  top: 206px;
-  left: -84px;
-  -webkit-transform: scale(0.60846);
-          transform: scale(0.60846);
+  top: -34px;
+  left: -255px;
+  -webkit-transform: scale(1.92581);
+          transform: scale(1.92581);
 }
 
 .main-container .piece:nth-child(6) {
-  top: 152px;
-  left: -54px;
-  -webkit-transform: scale(1.70809);
-          transform: scale(1.70809);
+  top: -129px;
+  left: 385px;
+  -webkit-transform: scale(0.2594);
+          transform: scale(0.2594);
 }
 
 .main-container .piece:nth-child(7) {
-  top: 216px;
-  left: -176px;
-  -webkit-transform: scale(1.96563);
-          transform: scale(1.96563);
+  top: -195px;
+  left: -297px;
+  -webkit-transform: scale(1.69036);
+          transform: scale(1.69036);
 }
 
 .main-container .piece:nth-child(8) {
-  top: -239px;
-  left: -230px;
-  -webkit-transform: scale(1.69823);
-          transform: scale(1.69823);
+  top: 105px;
+  left: -101px;
+  -webkit-transform: scale(1.08347);
+          transform: scale(1.08347);
 }
 
 .main-container .piece:nth-child(9) {
-  top: -237px;
-  left: 330px;
-  -webkit-transform: scale(1.34701);
-          transform: scale(1.34701);
+  top: -92px;
+  left: 163px;
+  -webkit-transform: scale(1.24944);
+          transform: scale(1.24944);
 }
 
 .main-container .piece:nth-child(10) {
-  top: 154px;
-  left: -84px;
-  -webkit-transform: scale(1.27356);
-          transform: scale(1.27356);
+  top: -291px;
+  left: -36px;
+  -webkit-transform: scale(0.91649);
+          transform: scale(0.91649);
 }
 
 .main-container__projets,
@@ -358,17 +379,12 @@ aside {
 .main-container__about .text p {
   font-size: 1.8em;
   text-align: center;
-  padding: 30px 0;
+  padding: 55px 0;
   opacity: 0;
   pointer-events: none;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
   font-family: "Federo", sans-serif;
-}
-
-.main-container__projets .text .text--padding,
-.main-container__about .text .text--padding {
-  padding: 30px 0;
 }
 
 .main-container__projets:hover .projet__text p,
@@ -395,38 +411,12 @@ aside {
   margin: 15px 0;
 }
 
-.bando {
-  position: absolute;
-  width: 100vw;
-  background-color: #f06449;
-  z-index: 50;
-}
-
-.transition-swipe {
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
-  height: 0;
-}
-
-html.is-animating .transition-swipe {
-  height: 100vh;
-}
-
-.transition-slide {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-html.is-animating .transition-slide {
-  opacity: 0.9;
-}
-
 .circle-1 {
   position: absolute;
-  top: 559px;
-  left: 546px;
-  -webkit-transform: scale(1.46656);
-          transform: scale(1.46656);
+  top: 205px;
+  left: 784px;
+  -webkit-transform: scale(0.22607);
+          transform: scale(0.22607);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -437,10 +427,10 @@ html.is-animating .transition-slide {
 
 .circle-2 {
   position: absolute;
-  top: 103px;
-  left: 899px;
-  -webkit-transform: scale(1.23848);
-          transform: scale(1.23848);
+  top: 207px;
+  left: 653px;
+  -webkit-transform: scale(1.1598);
+          transform: scale(1.1598);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -451,10 +441,10 @@ html.is-animating .transition-slide {
 
 .circle-3 {
   position: absolute;
-  top: 433px;
-  left: 760px;
-  -webkit-transform: scale(1.99702);
-          transform: scale(1.99702);
+  top: 580px;
+  left: 592px;
+  -webkit-transform: scale(1.00578);
+          transform: scale(1.00578);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -465,10 +455,10 @@ html.is-animating .transition-slide {
 
 .circle-4 {
   position: absolute;
-  top: 333px;
-  left: 1070px;
-  -webkit-transform: scale(0.08357);
-          transform: scale(0.08357);
+  top: 661px;
+  left: 984px;
+  -webkit-transform: scale(2.03483);
+          transform: scale(2.03483);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -479,10 +469,10 @@ html.is-animating .transition-slide {
 
 .circle-5 {
   position: absolute;
-  top: 38px;
-  left: 282px;
-  -webkit-transform: scale(1.25439);
-          transform: scale(1.25439);
+  top: 43px;
+  left: 854px;
+  -webkit-transform: scale(0.31894);
+          transform: scale(0.31894);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -493,10 +483,10 @@ html.is-animating .transition-slide {
 
 .circle-6 {
   position: absolute;
-  top: 386px;
-  left: 300px;
-  -webkit-transform: scale(2.97085);
-          transform: scale(2.97085);
+  top: 467px;
+  left: 1122px;
+  -webkit-transform: scale(0.48015);
+          transform: scale(0.48015);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -507,10 +497,10 @@ html.is-animating .transition-slide {
 
 .circle-7 {
   position: absolute;
-  top: 359px;
-  left: 137px;
-  -webkit-transform: scale(0.11985);
-          transform: scale(0.11985);
+  top: 442px;
+  left: 732px;
+  -webkit-transform: scale(2.46059);
+          transform: scale(2.46059);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -521,10 +511,10 @@ html.is-animating .transition-slide {
 
 .circle-8 {
   position: absolute;
-  top: 394px;
-  left: 390px;
-  -webkit-transform: scale(2.37185);
-          transform: scale(2.37185);
+  top: 304px;
+  left: 295px;
+  -webkit-transform: scale(2.90377);
+          transform: scale(2.90377);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -535,10 +525,10 @@ html.is-animating .transition-slide {
 
 .circle-9 {
   position: absolute;
-  top: 87px;
-  left: 645px;
-  -webkit-transform: scale(1.63339);
-          transform: scale(1.63339);
+  top: 96px;
+  left: 194px;
+  -webkit-transform: scale(0.091);
+          transform: scale(0.091);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -549,10 +539,10 @@ html.is-animating .transition-slide {
 
 .circle-10 {
   position: absolute;
-  top: 546px;
-  left: 824px;
-  -webkit-transform: scale(1.40591);
-          transform: scale(1.40591);
+  top: 211px;
+  left: 989px;
+  -webkit-transform: scale(0.03886);
+          transform: scale(0.03886);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -563,10 +553,10 @@ html.is-animating .transition-slide {
 
 .circle-11 {
   position: absolute;
-  top: 510px;
-  left: 1142px;
-  -webkit-transform: scale(2.35731);
-          transform: scale(2.35731);
+  top: 577px;
+  left: 502px;
+  -webkit-transform: scale(1.72458);
+          transform: scale(1.72458);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -577,10 +567,10 @@ html.is-animating .transition-slide {
 
 .circle-12 {
   position: absolute;
-  top: 563px;
-  left: 39px;
-  -webkit-transform: scale(1.03948);
-          transform: scale(1.03948);
+  top: 424px;
+  left: 279px;
+  -webkit-transform: scale(1.66472);
+          transform: scale(1.66472);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -591,10 +581,10 @@ html.is-animating .transition-slide {
 
 .circle-13 {
   position: absolute;
-  top: 268px;
-  left: 614px;
-  -webkit-transform: scale(1.76725);
-          transform: scale(1.76725);
+  top: 650px;
+  left: 707px;
+  -webkit-transform: scale(2.02606);
+          transform: scale(2.02606);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -605,10 +595,10 @@ html.is-animating .transition-slide {
 
 .circle-14 {
   position: absolute;
-  top: 461px;
-  left: 1142px;
-  -webkit-transform: scale(0.23389);
-          transform: scale(0.23389);
+  top: 564px;
+  left: 837px;
+  -webkit-transform: scale(2.67541);
+          transform: scale(2.67541);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -619,10 +609,10 @@ html.is-animating .transition-slide {
 
 .circle-15 {
   position: absolute;
-  top: 117px;
-  left: 1108px;
-  -webkit-transform: scale(0.13495);
-          transform: scale(0.13495);
+  top: 271px;
+  left: 1177px;
+  -webkit-transform: scale(2.3688);
+          transform: scale(2.3688);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -660,8 +650,8 @@ h2 {
 }
 
 .project {
-  -webkit-box-shadow: 0px 1px 5px 5px;
-          box-shadow: 0px 1px 5px 5px;
+  -webkit-box-shadow: 0px 2px 10px 2px;
+          box-shadow: 0px 2px 10px 2px;
   margin: 10px;
   border-radius: 5px;
   font-size: 2rem;

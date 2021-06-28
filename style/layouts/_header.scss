@@ -4,18 +4,11 @@ header nav {
 header ul {
 	display: flex;
 	justify-content: space-between;
-	margin: 0;
-	padding: 0;
 	list-style: none;
 	li {
 		text-decoration: underline;
 		z-index: 30;
 		font-family: $font-header;
 		font-size: 2rem;
-		//padding: 10px 50px;
 	}
-	// li:hover {
-	// 	transform: scale(25, 10);
-	// 	transition: 0.5s;
-	// }
 }
