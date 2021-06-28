@@ -1,0 +1,11 @@
+.text__container {
+	@include mobile {
+		padding: 0 20px;
+		transform: translateY(0);
+	}
+}
+.about-circle {
+	@include mobile {
+		display: none;
+	}
+}

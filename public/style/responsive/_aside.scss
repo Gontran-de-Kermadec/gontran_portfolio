@@ -1,0 +1,20 @@
+aside {
+	@include mobile {
+		position: initial;
+		//top: 50%;
+		transform: translateY(0);
+	}
+}
+.homepage--aside {
+	@include mobile {
+		position: absolute;
+		top: 90vh;
+		width: 100vw;
+	}
+}
+.icon__container {
+	@include mobile {
+		display: flex;
+		justify-content: space-around;
+	}
+}

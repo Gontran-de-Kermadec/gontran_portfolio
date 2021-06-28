@@ -10,18 +10,19 @@
 		margin: 15px 0;
 	}
 }
-
+.about-circle {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: $secondary-color;
+	opacity: 0.5;
+	z-index: -5;
+}
 @for $i from 1 through 15 {
 	.circle-#{$i} {
-		position: absolute;
 		top: random(700) + px;
 		left: random(1200) + px;
 		transform: scale(random() * 3);
-		width: 40px;
-		height: 40px;
-		border-radius: 50%;
-		background: $secondary-color;
-		opacity: 0.5;
-		z-index: -5;
 	}
 }
